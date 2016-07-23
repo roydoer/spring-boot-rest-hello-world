@@ -1,0 +1,9 @@
+server:
+  port: 9000
+  context-path: /test
+  display-name: Boot REST App
+
+prompt.content: ">>>"
+
+nickname: Earthling
+name: Earth Creature ${nickname}
