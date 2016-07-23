@@ -3,7 +3,7 @@ server:
   context-path: /test
   display-name: Boot REST App
 
-prompt.content: ">>DEV===>"
+prompt.content: ">>>"
 
 nickname: Earthling
 name: Earth Creature ${nickname}
