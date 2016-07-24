@@ -19,15 +19,23 @@ public class HelloWorldApplication {
   private String name;
 
   @Autowired
+  private MessageProperties messageProperties;
+
+  @Autowired
+  private MessagePropertiesInSeparateFile messagePropertiesInSeparateFile;
+
+  @Autowired
   private Prompt prompt;
 
   @RequestMapping("/")
   public String hi() {
-    return prompt.getContent() + ": " + "I'm listening, " + name;
+    return prompt.getContent() + ": " + "I'm listening, " + name +
+      ". Message properties: " + messageProperties.getProperty() +
+      ". Message properties from separate file: " + messagePropertiesInSeparateFile.getProperty();
   }
 
-	public static void main(String[] args) {
-		SpringApplication.run(HelloWorldApplication.class, args);
-	}
+  public static void main(String[] args) {
+    SpringApplication.run(HelloWorldApplication.class, args);
+  }
 
 }

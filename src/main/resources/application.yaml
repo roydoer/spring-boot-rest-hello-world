@@ -7,3 +7,6 @@ prompt.content: ">>DEV===>"
 
 nickname: Earthling
 name: Earth Creature ${nickname}
+
+messageProperties.property: the value
+
